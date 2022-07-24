@@ -1,0 +1,122 @@
+.messenger {
+    height: calc(100vh - 70px);
+    display: flex;
+    flex-direction: row;
+}
+
+.chatMenu {
+    flex: 2.5;
+    padding: 10px;
+}
+
+.chatMenuInput {
+    width: 90%;
+    padding: 10px 0;
+    border: none;
+    border-bottom: 1px solid grey;
+}
+
+.chatMenuInput:focus {
+    outline: none;
+}
+
+.chatBox {
+    flex: 6.5;
+}
+
+.chatBoxWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
+.chatBoxNav{
+    background-color: black;
+    color: #fff52f;
+    border-radius:0px;
+}
+.chatBoxNavWrapper{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin-top: 3px;
+}
+.chatBoxNavWrapperName{
+    font-weight: 500;
+    font-size: 18px;
+}
+.chatBoxTop {
+    height: 100%;
+    overflow-y: scroll;
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+
+.chatBoxBottom {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.chatMessageInput {
+    width: 85% !important;
+    height: 90px !important;
+    padding: 10px;
+    background-color: #d5d3d34f;
+    border: none;
+    border-radius: 12px;
+}
+
+.chatMessageInput:focus{
+    outline:none ;
+}
+
+.chatSubmitButton {
+    width: 70px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #fff52f;
+    color: black;
+    border: 1.5px solid black;
+    font-weight: 600;
+}
+
+.chatSubmitButton:hover {
+    background-color: #ece334;
+}
+
+.chatOnline {
+    flex: 3;
+    padding: 6px;
+}
+
+.chatMenuWrapper,
+.chatBoxWrapper,
+.chatOnlineWrapper {
+    height: 100%;
+}
+
+.noConversation{
+    display:flex;
+    position:absolute;
+    flex-direction:column;
+    justify-content:center;
+    align-items: center;
+    width: 100%;
+}
+
+.noConversationImg{
+    height: 400px;
+    width: 400px;
+
+}
+.noConversationText{
+    top:10%;
+    font-size: 40px;
+    color: rgb(214, 214, 214);
+    cursor: default;
+}
